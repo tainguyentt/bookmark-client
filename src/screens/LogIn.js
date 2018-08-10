@@ -15,7 +15,7 @@ export default class LogIn extends Component {
   }
   render() {
     return (
-      <KeyboardAvoidingView behavior="padding" style={styles.wrapper}>
+      <KeyboardAvoidingView behavior="padding" style={styles.wrapper} enabled={true}>
         <View style={styles.headerWrapper}>
           <Image style={styles.headerImage} source={require('../images/logo.png')} />
           <Text style={styles.headerLabel}> bookmark </Text>

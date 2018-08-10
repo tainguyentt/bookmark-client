@@ -1,21 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import LogIn from './src/screens/LogIn';
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View>
-          <Text>Hello World</Text>
-        </View>
-      </View>
+      <LogIn />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  }
-});

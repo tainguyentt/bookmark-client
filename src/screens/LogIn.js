@@ -1,11 +1,11 @@
+import Icon from '@expo/vector-icons/Ionicons';
 import React, { Component } from 'react';
 import { Alert, Image, KeyboardAvoidingView, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native';
 import { styles } from './styles/LogIn';
-import Icon from '@expo/vector-icons/Ionicons';
 
 export default class LogIn extends Component {
-  handleOnEmailLogin() {
-    Alert.alert('Not available yet!');
+  handleOnEmailLogin = () => {
+    this.props.navigation.navigate('LoggedIn');
   }
   handleOnGoogleLogIn() {
     Alert.alert('Not available yet!');

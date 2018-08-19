@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import LoggedIn from './src/screens/LoggedIn';
+import AppNavigator from './src/navigators/AppNavigator';
 
 export default class App extends Component {
   render() {
     return (
-      <LoggedIn />
+      <AppNavigator />
     );
   }
 }

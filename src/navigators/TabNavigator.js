@@ -7,7 +7,13 @@ import colors from '../styles/colors';
 
 export default MainTabNavigator = createBottomTabNavigator(
   {
-    MyListContainer: { screen: MyListContainer },
+    MyListContainer: {
+      screen: MyListContainer,
+      navigationOptions: {
+        headerMode: 'float',
+        headerTitle: 'My List'
+      }
+    },
     RecommendedContainer: { screen: RecommendedContainer },
     NotificationsContainer: { screen: NotificationsContainer },
     MyListContProfileContainerainer: { screen: ProfileContainer }
